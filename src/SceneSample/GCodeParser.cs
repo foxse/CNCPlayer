@@ -5,7 +5,9 @@ namespace SceneSample
 {
     public static class GCodeParser
     {
-        public static GCommand Parse(string text, float scale = 1)
+        private static int _line = 1;
+
+        public static GCommand Parse(string text, float scale = 1, bool lineNumbers = false)
         {
             try
             {
@@ -13,12 +15,12 @@ namespace SceneSample
 
                 var arr = text.Split(' ');
 
-                result.LineNumber = int.Parse(arr[0].Trim('N'));
-                result.Command = ParseCommandType(arr[1]);
+                result.LineNumber = lineNumbers ? int.Parse(arr[0].Trim('N')) : _line++;
+                result.Command = ParseCommandType(arr[lineNumbers? 1 : 0]);
 
                 string coordinates = string.Empty;
 
-                for (int i = 2; i < arr.Length; i++)
+                for (int i = lineNumbers? 2 : 1; i < arr.Length; i++)
                 {
                     if (arr[i].Length == 0)
                         continue;
@@ -54,6 +56,11 @@ namespace SceneSample
             {
                 return null;
             }
+        }
+
+        public static void DropCounters()
+        {
+            _line = 1;
         }
 
         static CommandType ParseCommandType(string text)

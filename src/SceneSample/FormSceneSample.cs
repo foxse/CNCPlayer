@@ -152,9 +152,12 @@ namespace SceneSample
                 try
                 {
                     _gCode = File.ReadAllLines(ofd.FileName).ToList();
+                    
+                    GCodeParser.DropCounters();
+                    
                     foreach (var line in _gCode)
                     {
-                        var command = GCodeParser.Parse(line, ViewScale);
+                        var command = GCodeParser.Parse(line, ViewScale, checkBoxLineNumbers.Checked);
                         
                         _commands.Add(command);
                     }

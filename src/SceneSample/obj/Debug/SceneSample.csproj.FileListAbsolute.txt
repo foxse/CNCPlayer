@@ -1,0 +1,17 @@
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SceneSample.exe.config
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SceneSample.exe
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SceneSample.pdb
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SharpGL.dll
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SharpGL.SceneGraph.dll
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SharpGL.WinForms.dll
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SharpGL.xml
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SharpGL.SceneGraph.xml
+D:\home\ebabaev\projects\CNCPlayer\bin\Debug\SharpGL.WinForms.xml
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.csproj.AssemblyReference.cache
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.FormSceneSample.resources
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.Properties.Resources.resources
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.csproj.GenerateResource.cache
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.csproj.CoreCompileInputs.cache
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.csproj.CopyComplete
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.exe
+D:\home\ebabaev\projects\CNCPlayer\obj\Debug\SceneSample.pdb
