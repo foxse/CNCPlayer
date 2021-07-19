@@ -9,8 +9,7 @@
       "3DSampleApp/1.0.0": {
         "dependencies": {
           "HelixToolkit.Core.Wpf": "2.17.0",
-          "PropertyTools.Wpf": "3.1.0",
-          "ViewportCameraLibrary": "1.0.0"
+          "PropertyTools.Wpf": "3.1.0"
         },
         "runtime": {
           "3DSampleApp.dll": {}
@@ -55,12 +54,7 @@
           }
         }
       },
-      "System.ComponentModel.Annotations/4.6.0": {},
-      "ViewportCameraLibrary/1.0.0": {
-        "runtime": {
-          "ViewportCameraLibrary.dll": {}
-        }
-      }
+      "System.ComponentModel.Annotations/4.6.0": {}
     }
   },
   "libraries": {
@@ -103,11 +97,6 @@
       "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
       "path": "system.componentmodel.annotations/4.6.0",
       "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
-    },
-    "ViewportCameraLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

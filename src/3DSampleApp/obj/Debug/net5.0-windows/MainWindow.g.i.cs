@@ -62,7 +62,7 @@ namespace _3DSampleApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/3DSampleApp;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/3DSampleApp;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
