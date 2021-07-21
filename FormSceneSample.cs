@@ -1,22 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Text;
 using System.Windows.Forms;
 
 using SharpGL;
 using SharpGL.SceneGraph;
-using SharpGL.SceneGraph.Cameras;
-using SharpGL.SceneGraph.Collections;
 using SharpGL.SceneGraph.Core;
 using SharpGL.SceneGraph.Lighting;
 using SharpGL.SceneGraph.Effects;
 using SharpGL.SceneGraph.Primitives;
-using SharpGL.SceneGraph.Quadrics;
-using SharpGL.Enumerations;
 using SharpGL.SceneGraph.Assets;
 using System.IO;
 using System.Linq;
