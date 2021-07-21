@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "VVixP93pEb5E5TZ+iVR2zs9szmpf6MhDOu2v9fp7wiuBsYl5DT0eerVWpCwyQn3zWMb8M9MZ2WnwbgkObCM09g==",
+  "success": true,
+  "projectFilePath": "D:\\home\\ebabaev\\projects\\CNCPlayer\\src\\3DSampleApp\\3DSampleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EBabaev\\.nuget\\packages\\helixtoolkit\\2.17.0\\helixtoolkit.2.17.0.nupkg.sha512",
+    "C:\\Users\\EBabaev\\.nuget\\packages\\helixtoolkit.core.wpf\\2.17.0\\helixtoolkit.core.wpf.2.17.0.nupkg.sha512",
+    "C:\\Users\\EBabaev\\.nuget\\packages\\propertytools\\3.1.0\\propertytools.3.1.0.nupkg.sha512",
+    "C:\\Users\\EBabaev\\.nuget\\packages\\propertytools.wpf\\3.1.0\\propertytools.wpf.3.1.0.nupkg.sha512",
+    "C:\\Users\\EBabaev\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

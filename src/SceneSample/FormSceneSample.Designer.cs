@@ -49,6 +49,7 @@ namespace SceneSample
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.cutCheckBox = new System.Windows.Forms.CheckBox();
             this.cutInCheckBox = new System.Windows.Forms.CheckBox();
             this.freeCheckBox = new System.Windows.Forms.CheckBox();
@@ -56,7 +57,7 @@ namespace SceneSample
             this.button1 = new System.Windows.Forms.Button();
             this.playButton = new System.Windows.Forms.Button();
             this.openButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxLineNumbers = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.sceneControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -247,6 +248,7 @@ namespace SceneSample
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.checkBoxLineNumbers);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.cutCheckBox);
             this.panel1.Controls.Add(this.cutInCheckBox);
@@ -260,12 +262,21 @@ namespace SceneSample
             this.panel1.Size = new System.Drawing.Size(708, 29);
             this.panel1.TabIndex = 8;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(137, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Show tool path:";
+            // 
             // cutCheckBox
             // 
             this.cutCheckBox.AutoSize = true;
             this.cutCheckBox.Checked = true;
             this.cutCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cutCheckBox.Location = new System.Drawing.Point(256, 7);
+            this.cutCheckBox.Location = new System.Drawing.Point(336, 7);
             this.cutCheckBox.Name = "cutCheckBox";
             this.cutCheckBox.Size = new System.Drawing.Size(42, 17);
             this.cutCheckBox.TabIndex = 6;
@@ -278,7 +289,7 @@ namespace SceneSample
             this.cutInCheckBox.AutoSize = true;
             this.cutInCheckBox.Checked = true;
             this.cutInCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cutInCheckBox.Location = new System.Drawing.Point(197, 7);
+            this.cutInCheckBox.Location = new System.Drawing.Point(277, 7);
             this.cutInCheckBox.Name = "cutInCheckBox";
             this.cutInCheckBox.Size = new System.Drawing.Size(53, 17);
             this.cutInCheckBox.TabIndex = 5;
@@ -291,7 +302,7 @@ namespace SceneSample
             this.freeCheckBox.AutoSize = true;
             this.freeCheckBox.Checked = true;
             this.freeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.freeCheckBox.Location = new System.Drawing.Point(144, 7);
+            this.freeCheckBox.Location = new System.Drawing.Point(224, 7);
             this.freeCheckBox.Name = "freeCheckBox";
             this.freeCheckBox.Size = new System.Drawing.Size(47, 17);
             this.freeCheckBox.TabIndex = 4;
@@ -301,7 +312,7 @@ namespace SceneSample
             // 
             // stopButton
             // 
-            this.stopButton.Location = new System.Drawing.Point(428, 3);
+            this.stopButton.Location = new System.Drawing.Point(487, 3);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(41, 23);
             this.stopButton.TabIndex = 3;
@@ -311,7 +322,7 @@ namespace SceneSample
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(381, 3);
+            this.button1.Location = new System.Drawing.Point(440, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 23);
             this.button1.TabIndex = 2;
@@ -321,7 +332,7 @@ namespace SceneSample
             // 
             // playButton
             // 
-            this.playButton.Location = new System.Drawing.Point(334, 3);
+            this.playButton.Location = new System.Drawing.Point(393, 3);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(41, 23);
             this.playButton.TabIndex = 1;
@@ -339,14 +350,15 @@ namespace SceneSample
             this.openButton.UseVisualStyleBackColor = true;
             this.openButton.Click += new System.EventHandler(this.openButton_Click);
             // 
-            // label1
+            // checkBoxLineNumbers
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Show tool path:";
+            this.checkBoxLineNumbers.AutoSize = true;
+            this.checkBoxLineNumbers.Location = new System.Drawing.Point(50, 7);
+            this.checkBoxLineNumbers.Name = "checkBoxLineNumbers";
+            this.checkBoxLineNumbers.Size = new System.Drawing.Size(89, 17);
+            this.checkBoxLineNumbers.TabIndex = 8;
+            this.checkBoxLineNumbers.Text = "Line numbers";
+            this.checkBoxLineNumbers.UseVisualStyleBackColor = true;
             // 
             // FormSceneSample
             // 
@@ -407,6 +419,7 @@ namespace SceneSample
         private System.Windows.Forms.CheckBox cutInCheckBox;
         private System.Windows.Forms.CheckBox freeCheckBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBoxLineNumbers;
     }
 }
 
