@@ -13,7 +13,7 @@ namespace GCode.Core
             {
                 var result = new GCommand();
 
-                var arr = text.Split(' ');
+                var arr = text.Split(new[] { ' ', '(', ')' });
 
                 if (arr.Length == 1)
                 {

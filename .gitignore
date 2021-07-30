@@ -10,18 +10,15 @@
 *.log
 
 packages/
-node_modules/
-bower_components/
 
-[Oo]bj/
-[Bb]in/
-TestResults/
+obj
+bin
 
 UpgradeLog.*
 
 .git/
-.vs/*
-.vscode/*
+.vs/
+.vscode/
 Backup/
 
 # Publish Web Outputgit st

@@ -66,6 +66,15 @@ namespace GCodePlayer3D
         public bool ShowLineNumbers { get; set; } = true;
         public bool ShowTravelLines { get; set; }
 
+        private bool showGrid = true;
+        public bool ShowGrid { 
+            get => showGrid;
+            set { 
+                showGrid = value;
+                NotifyOfPropertyChange(() => ShowGrid);
+            } 
+        }
+
         private int _commandIndex;
 
         public int CommandIndex
@@ -93,6 +102,7 @@ namespace GCodePlayer3D
         public BindableCollection<string> GCode { get; set; }
 
         private System.Windows.Media.Media3D.Point3DCollection points;
+
         public System.Windows.Media.Media3D.Point3DCollection Points
         {
             get
@@ -107,7 +117,7 @@ namespace GCodePlayer3D
             }
         }
 
-        public void LoadCodeFromFile()
+        public async void LoadCodeFromFile()
         {
             Commands = new BindableCollection<GCommand>();
 
@@ -117,7 +127,7 @@ namespace GCodePlayer3D
             {
                 try
                 {
-                    GCode = new BindableCollection<string>(File.ReadAllLines(ofd.FileName));
+                    GCode = new BindableCollection<string>(await File.ReadAllLinesAsync(ofd.FileName));
 
                     BaseParser.DropCounters();
 
@@ -143,8 +153,8 @@ namespace GCodePlayer3D
 
         public void StartSequence()
         {
-            
-           
+
+
             if (_commandIndex < 0 || _commandIndex >= Commands.Count)
             {
                 CommandIndex = 0;
@@ -166,7 +176,7 @@ namespace GCodePlayer3D
                 return;
             }
 
-            
+
 
             StartTimer();
         }

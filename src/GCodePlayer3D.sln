@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCodePlayer3D", "GCodePlayer3D.csproj", "{159DCCCD-EF19-455A-B749-ACB8FDD80DC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCodePlayer3D", ".\GCodePlayer3D\GCodePlayer3D.csproj", "{159DCCCD-EF19-455A-B749-ACB8FDD80DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCode.Core", "..\GCodeParser\GCode.Core.csproj", "{1A5748AF-ECDD-4DCD-8FB3-930554527E94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCode.Core", ".\GCodeParser\GCode.Core.csproj", "{1A5748AF-ECDD-4DCD-8FB3-930554527E94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

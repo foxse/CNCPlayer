@@ -119,13 +119,14 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Border Background="#160c0c0c" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Grid.ColumnSpan="2">
+            <Border Background="#160c0c0c" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Grid.ColumnSpan="3">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="2">
                     <Button x:Name="LoadCodeFromFile">
                         <!--cal:Message.Attach="[Event Click]=[Action LoadCodeFromFile()]"-->
@@ -161,6 +162,9 @@
                     <Border CornerRadius="4" Background="LightGray" Margin="2">
                         <CheckBox Content="Line numbers" IsChecked="{Binding ShowLineNumbers, Mode=TwoWay}" Margin="4,0,5,0" Foreground="LightSlateGray" FontWeight="Bold" VerticalAlignment="Center" />
                     </Border>
+                    <Border CornerRadius="4" Background="LightGray" Margin="2">
+                        <CheckBox Content="Grid" IsChecked="{Binding ShowGrid, Mode=TwoWay}" Margin="4,0,5,0" Foreground="LightSlateGray" FontWeight="Bold" VerticalAlignment="Center" />
+                    </Border>
                 </StackPanel>
             </Border>
 
@@ -176,6 +180,7 @@
                     <local:PopupUserControl x:Name="Header" Foreground="#E0FFFF"/>
                 </Grid>
             </Popup>-->
+
             <Border Grid.Row="1" Grid.Column="0" BorderBrush="Gray" BorderThickness="1" CornerRadius="4">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -196,8 +201,15 @@
                     </Border>
                 </Grid>
             </Border>
+
+            <GridSplitter Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left"
+              Width="2" Background="LightGray"
+              ResizeDirection="Columns"
+              ResizeBehavior="PreviousAndNext"
+              VerticalAlignment="Stretch"/>
+
             <!--<viewportcameralibrary:ViewportCamera3D Grid.Row="1"/>-->
-            <Border Grid.Row="1" Grid.Column="1" Background="#160c0c0c" BorderBrush="Gray" BorderThickness="1" CornerRadius="4">
+            <Border Grid.Row="1" Grid.Column="2" Background="#160c0c0c" BorderBrush="Gray" BorderThickness="1" CornerRadius="4">
             <helix:HelixViewport3D x:Name="view1">
                 <helix:HelixViewport3D.DefaultCamera>
                     <PerspectiveCamera Position="-50,-50,100" LookDirection="120,120,-100" UpDirection="0,0,1" FieldOfView="61" NearPlaneDistance="0.001"/>
@@ -216,7 +228,7 @@
                         </helix:SphereVisual3D.Transform>
                     </helix:SphereVisual3D>
                     <!--<helix:SphereVisual3D Center="5,0,0" Radius="1" Fill="White"/>-->
-                <helix:GridLinesVisual3D Thickness="0.1" >
+                <helix:GridLinesVisual3D Thickness="0.1" Visible="{Binding ShowGrid}" >
                         <helix:GridLinesVisual3D.Transform>
                             <TranslateTransform3D OffsetX="100" OffsetY="100"></TranslateTransform3D>
                         </helix:GridLinesVisual3D.Transform>
