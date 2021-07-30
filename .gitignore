@@ -24,7 +24,7 @@ UpgradeLog.*
 .vscode/*
 Backup/
 
-# Publish Web Output
+# Publish Web Outputgit st
 *.[Pp]ublish.xml
 *.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
