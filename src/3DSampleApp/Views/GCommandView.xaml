@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="GCodePlayer3D.Views.GCommandView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GCodePlayer3D.Views"
+             mc:Ignorable="d" >
+    <Border Grid.Row="1" Grid.Column="1" Background="#160c0c0c" BorderBrush="Gray" BorderThickness="1" CornerRadius="4">
+        <Grid Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="CommandType"/>
+            <TextBlock Grid.Column="1" Text="{Binding CommandType}" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Text="X"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding X}" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Text="Y"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Y}" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Text="Z"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Z}" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Text="Current Pos."/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding CurrentPos}" HorizontalAlignment="Center"/>
+        </Grid>
+    </Border>
+</UserControl>
