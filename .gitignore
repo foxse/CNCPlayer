@@ -19,15 +19,9 @@ TestResults/
 
 UpgradeLog.*
 
-
-project.lock.json
-src/RD.Site/wwwroot/lib
-site.min.js
-site.min.css
-
 .git/
-.vs/
-.vscode/
+.vs/*
+.vscode/*
 Backup/
 
 # Publish Web Output
